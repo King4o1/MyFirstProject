@@ -1,114 +1,215 @@
-    <!DOCTYPE html>
-<html 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-         <title>Random Web Page</title>
-         <link rel=stylesheet type="text/css" href="css/normalize.css">
-       
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #05c46b;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
 </head>
-<body> 
-<h1 id="top">Fragment Identifiers</h1>
-<p style="font-family:Verdana; color:black">So watch my chest heave
-As this last breath leaves me
-I am trying to be
-What you're dying to see
-I feel like "fuck man,
-Can't take this, anymore,
-This heart, break this."
-This is life that's so thankless,
-How could he just forsake us?</p>
-<nav>
-<ul>
-      <li><a href="#one">Go to Section One</a></li>
-      <li><a href="#two">Go to Section Two</a></li>
-      <li><a href="#three">Go to Section Three</a></li>
-      <li><a href="#four">Go to Section Four</a></li>
-      <li><a href="#five">Go to Section Five</a></li>
-      <li><a href="https://www.amazon.co.uk/?&tag=hydraamazonav-21&ref=pd_sl_781ozcfkw8_e&adgrpid=52740778523&hvpone=&hvptwo=&hvadid=441815611363&hvpos=&hvnetw=g&hvrand=6325738377944306389&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9045622&hvtargid=kwd-10573980&hydadcr=13724_2033556&gclid=CjwKCAiA6seQBhAfEiwAvPqu1z4ew4XKkbsIfTenJ28L2Sn7hURLWyWiS6BKmKCF7Ar5gFtumRTnzxoChzYQAvD_BwE">CLICK HERE</a><li>
-</ul>
-</nav>
 
-<h2 id="one">Section 1 </h2>
-<p style="font-family:Verdana;">Breaks us he makes us
-Hate us he gave us
-Nothing but no trust
-And I am so fucked up
-So let this gun bond us
-Let's hide by this lust
-And once we are just dust
-He'll know that he loved us</p>
+<body>
+	<h1>GeeksforGeeks Survey Form</h1>
 
-<h2 id="two">Section Two </h2>
-<p>Let it all burn
-I will burn first
-God I've tried, am I lost in your eyes?
-Just let me burn, it's what I deserve.
-God I've lied, am I lost in your eyes?
-So take me and make me
-Weakened and save me</p>
+	<!-- Create Form -->
+	<form id="form">
 
-<h2 id="three">Section Three </h2>
-<p>This hate that you gave me
-Keeps saying the same thing
-To sing when you hurt
-And to sing when you cry
-To sing when you live
-And to sing when you die
-And here at the end</p>
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
 
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
 
-<h2 id="four"> SEction Four</h2>
-<p>My nail tech knows how to keep a lil' secret
-I don't wish for my success, I speak it
-I caught a buzz, and you did too, but you tweakin'
-I look like I been gettin' money, how I reek it
-You smell me, that's LV
-Walkin' 'round with my chest out, and my skin smooth, I'm healthy
-I'm in the mix and I'm handshakin'
-But most of y'all can't help me (Nah)
-Most of y'all ain't wealthy (Nope)
-Most of y'all just dress like it
-I caught the vibe that y'all givin' off
-And I'm tryna make myself less like it
-This chick got a lil' Porsche body, I might let the bro test drive it
-It's hard for me to get excited, I love music, and stress 'bout it
-My city haulin' and I'm cosigning this wave, comin' up next out it
-Ridin' 'round and shotgun in her Tesla
-Hangin' both of my legs out of it, like "What's up?" (What's up?)
-I got stakes and they too high now, I can't fuck up (Can't fuck up)
-I like girls that's down to Earth, so don't be stuck up (Stuck up)
-I don't take Ls, I give 'em out and I chuck 'em up
-First listen they hearin' this shit, like "What the fuck?"
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
 
-Ten toes, that's my MO
-Fam' over gram, that's my MO (On my momma)
-Fuck a close friends, I got friends that I keep close
-And they let it go while I reload
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
 
-Like bow, bow, bow
-TSA just opened my bookbag up
-And my chain hittin' like bow, bow, bow, bow
-The king's back in his hometown, when them wheels hit
-And I touchdown they bow, bow, bow, bow
-She down low, three point stance
-I'm back there doin' Jack Dan's like bow, bow, bow, bow</p>
-<p><a href="#top">Back to Top</a>
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
 
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
 
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="intern">Intern</option>
+				<option value="professional">
+					Professional
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
 
+		<div class="form-control">
+			<label>
+				Would you recommend GeeksforGeeks
+				to a friend?
+			</label>
 
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Maybe</input>
+			</label>
+		</div>
 
+		<div class="form-control">
+			<label>Languages and Frameworks known
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">C</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">C++</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">C#</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Java</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Python</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">JavaScript</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">React</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Angular</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Django</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Spring</input></label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
 </body>
-<footer>
-      <p>Author by Patrcik Loner & copy;2015-MyCompany LLC</p>
-      Contact Info:<br>
-      123 Oak St<br>
-      Some City,OK<br>
-      11451</p>
 
-<nav>
-         <a href="about.htm">About</a>
-         <a href="home.htm">Home</a>
-         <a href="FAQs.htm">FAQs</a>
-</nav>
-</footer>
 </html>
